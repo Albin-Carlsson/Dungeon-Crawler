@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Crawler</title>
+
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="dungeoncrawler.css">
+    <link rel="stylesheet" href="enemies_Vilmer.css">
+
+</head>
+
+<body id="body" onload = "playMusic()" onload = "onload()" >
+
+    <div id="game">
+        <canvas id="canvas"></canvas>
+
+    
+
+    </div>
+
+
+
+    <div id="menu">
+        <button id="start" class="menuButton">START</button>
+        <button id="settings" class="menuButton">SETTINGS</button>
+    </div>
+    
+        <div id="inSettings">
+            <button id="forward" class="settingsButton">forward: w</button>
+            <button id="back" class="settingsButton">back: s</button>
+            <button id="left" class="settingsButton">left: a</button>
+            <button id="right" class="settingsButton">right: d</button>
+            <button id="ArrowUp" class="settingsButton">shoot_up: ArrowUp</button>
+            <button id="ArrowDown" class="settingsButton">shoot_down: ArrowDown</button>
+            <button id="ArrowRight" class="settingsButton">shoot_right: ArrowRight</button>
+            <button id="ArrowLeft" class="settingsButton">shoot_left: ArrowLeft</button>
+            <button id="backToMenu" class="menuButton">SETTINGS</button>
+        </div>    
+
+        <img src="spritesheet.png" id="spriteSheet"/>
+        <img src="brain.png" id="brainImage"/>
+
+        <script src="classes_Vilmer.js"></script>
+        <script src="dungeoncrawler_Albin.js"></script>
+        <script src="trackerPoints_Vilmer.js"></script>
+        <script src="enemies_Vilmer.js"></script>
+        <script src="menu_Vilmer.js"></script>
+        <audio id="music" loop>
+            <source src="Sacrificial.mp3" type="audio/mp3"/>
+    </body>
+
+</html>
